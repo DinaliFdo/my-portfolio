@@ -1,0 +1,1323 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Dinali Fernando | Business Information Systems Undergraduate & Business Analyst Intern" />
+  <meta name="keywords" content="Dinali Fernando, Business Analyst, Business Information Systems, Data Analysis, Power BI, Tableau, Sri Lanka" />
+  <meta name="author" content="Dinali Fernando" />
+  <title>Dinali Fernando | Business Analyst Portfolio</title>
+
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;600;700;800;900&family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet" />
+  <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
+</head>
+
+<body>
+
+  <!-- Custom cursor -->
+  <div class="cursor" id="cursor"></div>
+  <div class="cursor-ring" id="cursorRing"></div>
+
+  <!-- ==================== NAV ==================== -->
+  <nav class="nav" id="nav">
+    <div class="nav__inner">
+      <a href="#hero" class="nav__logo">
+        <span class="logo-bracket">[</span>DF<span class="logo-bracket">]</span>
+      </a>
+
+      <ul class="nav__links" id="navLinks">
+        <li><a href="#about" class="nav__link">About</a></li>
+        <li><a href="#education" class="nav__link">Education</a></li>
+        <li><a href="#skills" class="nav__link">Skills</a></li>
+        <li><a href="#projects" class="nav__link">Projects</a></li>
+        <li><a href="#experience" class="nav__link">Experience</a></li>
+        <li><a href="#certifications" class="nav__link">Certs</a></li>
+        <li><a href="#contact" class="nav__link">Contact</a></li>
+      </ul>
+
+      <a href="assests/Dinali_Fernando_Resume.pdf" class="nav__cv-btn" download>
+        <i data-lucide="download" style="width:14px;height:14px;"></i>
+        Resume
+      </a>
+
+      <button class="nav__toggle" id="navToggle" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <main>
+
+    <!-- ==================== HERO ==================== -->
+    <section class="hero" id="hero">
+      <canvas class="hero__canvas" id="heroCanvas"></canvas>
+
+      <div class="hero__glow hero__glow--1"></div>
+      <div class="hero__glow hero__glow--2"></div>
+      <div class="hero__glow hero__glow--3"></div>
+
+      <div class="hero__content">
+
+        <div class="hero__badge">
+          <span class="badge__dot"></span>
+          <span>Open to Internship Opportunities · 2026</span>
+        </div>
+
+        <h1 class="hero__name">
+          <span class="name-line" style="--d:0.05s">Dinali</span>
+          <span class="name-line name-line--accent" style="--d:0.15s">Fernando</span>
+        </h1>
+
+        <div class="hero__roles">
+          <span class="role-pill">BIS Undergraduate</span>
+          <span class="role-sep">/</span>
+          <span class="role-pill role-pill--primary">Business Analyst Intern</span>
+          <span class="role-sep">/</span>
+          <span class="role-pill">Data &amp; BI Enthusiast</span>
+        </div>
+
+        <p class="hero__tagline">
+          Connecting <em>business needs</em> with practical technology solutions —<br />
+          through analysis, data, reporting, and systems thinking.
+        </p>
+
+        <div class="hero__actions">
+          <a href="#projects" class="btn btn--primary">
+            <i data-lucide="folder-open"></i>
+            View Projects
+          </a>
+
+          <a href="assets/Dinali_Fernando_Resume.pdf" class="btn btn--ghost" download>
+            <i data-lucide="download"></i>
+            View Resume
+          </a>
+        </div>
+
+        <div class="hero__stats">
+          <div class="stat-chip">
+            <span class="stat-val">3+</span>
+            <span class="stat-lbl">Projects</span>
+          </div>
+          <div class="stat-chip">
+            <span class="stat-val">BIS</span>
+            <span class="stat-lbl">Undergraduate</span>
+          </div>
+          <div class="stat-chip">
+            <span class="stat-val">BI</span>
+            <span class="stat-lbl">Data Focus</span>
+          </div>
+          <div class="stat-chip">
+            <span class="stat-val">2026</span>
+            <span class="stat-lbl">Internships</span>
+          </div>
+        </div>
+
+        <div class="hero__terminal">
+          <div class="terminal__bar">
+            <span class="t-dot t-dot--r"></span>
+            <span class="t-dot t-dot--y"></span>
+            <span class="t-dot t-dot--g"></span>
+            <span class="t-title">dinali@business-lab ~ %</span>
+          </div>
+          <div class="terminal__body">
+            <span class="t-prompt">$</span>
+            <span class="t-text" id="terminalText"></span>
+            <span class="t-cursor">▋</span>
+          </div>
+        </div>
+
+      </div>
+
+      <a href="#about" class="hero__scroll" aria-label="Scroll to About">
+        <i data-lucide="chevrons-down"></i>
+      </a>
+    </section>
+
+    <!-- ==================== ABOUT ==================== -->
+    <section class="section about" id="about">
+      <div class="container">
+        <div class="eyebrow">
+          <span class="eyebrow__line"></span>
+          <span class="eyebrow__num">01</span>
+          <span class="eyebrow__txt">About Me</span>
+        </div>
+
+        <div class="about__layout">
+
+          <div class="about__photo reveal">
+            <div class="profile-card">
+
+              <div class="scan-ring">
+                <div class="scan-line"></div>
+                <span class="corner corner--tl"></span>
+                <span class="corner corner--tr"></span>
+                <span class="corner corner--bl"></span>
+                <span class="corner corner--br"></span>
+
+                <img
+                  src="assests/IMG_1576.PNG"
+                  alt="Dinali Fernando"
+                  class="profile-img"
+                  onerror="this.style.display='none';this.nextElementSibling.style.display='flex'"
+                />
+
+                <div class="profile-img-ph" style="display:none;">
+                  <i data-lucide="user"></i>
+                </div>
+              </div>
+
+              <div class="profile-card__info">
+                <span class="profile-card__name">Dinali Fernando</span>
+                <span class="profile-card__role">Business Analyst Intern</span>
+                <div class="profile-card__status">
+                  <span class="profile-dot"></span>
+                  <span>Available for Internships</span>
+                </div>
+              </div>
+
+              <div class="profile-card__id">
+                <span class="pid-key">PROFILE_ID</span>
+                <span class="pid-sep">:</span>
+                <span class="pid-val">DF-2026-BIS</span>
+              </div>
+
+              <div class="profile-card__socials">
+                <a href="mailto:hansimadinali@gmail.com" aria-label="Email">
+                  <i data-lucide="mail"></i>
+                </a>
+                <a href="https://www.linkedin.com/in/dinalifernando" target="_blank" rel="noopener" aria-label="LinkedIn">
+                  <i data-lucide="linkedin"></i>
+                </a>
+              </div>
+
+            </div>
+          </div>
+
+          <div class="about__left reveal">
+            <h2 class="sec-h2">A bit <span class="c-primary">about me</span></h2>
+
+            <p class="about__p">
+              I am a motivated and detail-oriented
+              <strong>Business Information Systems undergraduate</strong>
+              at the University of Sri Jayewardenepura, with a strong foundation in
+              data analysis, Excel and Business Intelligence tools.
+            </p>
+
+            <p class="about__p">
+              My interests sit at the intersection of
+              <strong>business analysis, data management, reporting and systems</strong>.
+              I enjoy understanding a problem, organizing information and translating
+              business requirements into useful technology solutions.
+            </p>
+
+            <div class="about__tags">
+              <span class="a-tag"><i data-lucide="map-pin"></i> Sri Lanka</span>
+              <span class="a-tag"><i data-lucide="landmark"></i> USJ</span>
+              <span class="a-tag"><i data-lucide="bar-chart-3"></i> Data Analysis</span>
+              <span class="a-tag"><i data-lucide="briefcase-business"></i> Business Analysis</span>
+              <span class="a-tag"><i data-lucide="database"></i> Data Management</span>
+            </div>
+          </div>
+
+          <div class="about__right reveal">
+            <div class="roadmap-card">
+              <div class="roadmap-card__hd">
+                <i data-lucide="map" style="width:15px;height:15px;"></i>
+                Career Roadmap
+              </div>
+
+              <div class="roadmap__steps">
+
+                <div class="roadmap__step roadmap__step--active">
+                  <div class="roadmap__ico">
+                    <i data-lucide="graduation-cap"></i>
+                  </div>
+                  <div class="roadmap__body">
+                    <span class="roadmap__label">Now</span>
+                    <strong>BIS Undergraduate</strong>
+                    <span>Business Systems · Databases · Analytics · Programming</span>
+                  </div>
+                </div>
+
+                <div class="roadmap__line"></div>
+
+                <div class="roadmap__step">
+                  <div class="roadmap__ico">
+                    <i data-lucide="chart-no-axes-combined"></i>
+                  </div>
+                  <div class="roadmap__body">
+                    <span class="roadmap__label">Next</span>
+                    <strong>Business Analyst / BI</strong>
+                    <span>Requirements · Reporting · Data Visualization · Process Analysis</span>
+                  </div>
+                </div>
+
+                <div class="roadmap__line"></div>
+
+                <div class="roadmap__step">
+                  <div class="roadmap__ico">
+                    <i data-lucide="lightbulb"></i>
+                  </div>
+                  <div class="roadmap__body">
+                    <span class="roadmap__label">Goal</span>
+                    <strong>Data-Driven Business Solutions</strong>
+                    <span>Analytics · Systems Thinking · Decision Support · Digital Transformation</span>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== EDUCATION ==================== -->
+    <section class="section education" id="education">
+      <div class="container">
+
+        <div class="eyebrow">
+          <span class="eyebrow__line"></span>
+          <span class="eyebrow__num">02</span>
+          <span class="eyebrow__txt">Education</span>
+        </div>
+
+        <h2 class="sec-h2">Academic <span class="c-primary">Foundation</span></h2>
+
+        <div class="education-grid">
+
+          <article class="edu-card reveal">
+            <div class="edu-card__top">
+              <span class="edu-date">JAN 2024 — PRESENT</span>
+              <span class="edu-icon"><i data-lucide="graduation-cap"></i></span>
+            </div>
+            <h3>BSc Honours in Business Information Systems</h3>
+            <p class="edu-org">
+              Department of Information Technology · Faculty of Management Studies and Commerce ·
+              University of Sri Jayewardenepura
+            </p>
+            <p class="edu-desc">
+              Building knowledge across business analytics, systems analysis, programming,
+              database management and organizational behaviour.
+            </p>
+            <div class="edu-tags">
+              <span>Business Analytics</span>
+              <span>Systems Analysis</span>
+              <span>Python</span>
+              <span>C#</span>
+              <span>Databases</span>
+            </div>
+          </article>&nbsp;
+
+          <article class="edu-card reveal">
+            <div class="edu-card__top">
+              <span class="edu-date">2022 — 2023</span>
+              <span class="edu-icon"><i data-lucide="book-open"></i></span>
+            </div>
+            <h3>G.C.E. Advanced Level — Commerce Stream</h3>
+            <p class="edu-org">St. Sebastian’s Balika Maha Vidyalaya, Kandana</p>
+            <p class="edu-desc">
+              Completed the Commerce stream with strong academic performance.
+            </p>
+            <div class="edu-tags">
+              <span>3 A’s</span>
+              <span>Z-score 1.84</span>
+              <span>District Rank 144</span>
+            </div>
+          </article>&nbsp;
+
+          <article class="edu-card reveal">
+            <div class="edu-card__top">
+              <span class="edu-date">2019</span>
+              <span class="edu-icon"><i data-lucide="school"></i></span>
+            </div>
+            <h3>G.C.E. Ordinary Level</h3>
+            <p class="edu-org">St. Sebastian’s Balika Maha Vidyalaya, Kandana</p>
+            <p class="edu-desc">
+              Completed G.C.E. Ordinary Level with strong results, including Mathematics and English.
+            </p>
+            <div class="edu-tags">
+              <span>5 A’s</span>
+              <span>Mathematics</span>
+              <span>English</span>
+            </div>
+          </article>&nbsp;
+
+          <article class="edu-card edu-card--wide reveal">
+            <div class="edu-card__top">
+              <span class="edu-date">MAR 2023 — FEB 2024</span>
+              <span class="edu-icon"><i data-lucide="badge-check"></i></span>
+            </div>
+            <h3>Chartered Accountancy — Part Qualified</h3>
+            <p class="edu-org">Institute of Chartered Accountants of Sri Lanka</p>
+            <p class="edu-desc">
+              Professional accounting studies that strengthened financial analysis,
+              controls and business understanding.
+            </p>
+          </article>&nbsp;
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== SKILLS ==================== -->
+    <section class="section skills" id="skills">
+      <div class="container">
+
+        <div class="eyebrow">
+          <span class="eyebrow__line"></span>
+          <span class="eyebrow__num">03</span>
+          <span class="eyebrow__txt">Skills</span>
+        </div>
+
+        <h2 class="sec-h2">Technical <span class="c-primary">Toolkit</span></h2>
+
+        <div class="skills__layout">
+
+          <div class="skill-card reveal">
+            <div class="skill-card__hd">
+              <div class="skill-card__ico"><i data-lucide="bar-chart-3"></i></div>
+              <h3>Data &amp; BI</h3>
+            </div>
+
+            <ul class="skill-bars">
+              <li><span>MS Excel</span><div class="bar"><div class="bar__fill" data-w="90"></div></div><span class="pct">90%</span></li>
+              <li><span>Power BI</span><div class="bar"><div class="bar__fill" data-w="82"></div></div><span class="pct">82%</span></li>
+              <li><span>Tableau</span><div class="bar"><div class="bar__fill" data-w="78"></div></div><span class="pct">78%</span></li>
+              <li><span>Data Analysis</span><div class="bar"><div class="bar__fill" data-w="88"></div></div><span class="pct">88%</span></li>
+            </ul>
+          </div>
+
+          <div class="skill-card reveal">
+            <div class="skill-card__hd">
+              <div class="skill-card__ico"><i data-lucide="database"></i></div>
+              <h3>Databases</h3>
+            </div>
+
+            <ul class="skill-bars">
+              <li><span>MySQL</span><div class="bar"><div class="bar__fill" data-w="86"></div></div><span class="pct">86%</span></li>
+              <li><span>MS Access</span><div class="bar"><div class="bar__fill" data-w="82"></div></div><span class="pct">82%</span></li>
+              <li><span>MongoDB</span><div class="bar"><div class="bar__fill" data-w="72"></div></div><span class="pct">72%</span></li>
+              <li><span>Data Management</span><div class="bar"><div class="bar__fill" data-w="85"></div></div><span class="pct">85%</span></li>
+            </ul>
+          </div>
+
+          <div class="skill-card reveal">
+            <div class="skill-card__hd">
+              <div class="skill-card__ico"><i data-lucide="code-2"></i></div>
+              <h3>Programming</h3>
+            </div>
+
+            <ul class="skill-bars">
+              <li><span>Python</span><div class="bar"><div class="bar__fill" data-w="86"></div></div><span class="pct">86%</span></li>
+              <li><span>C#</span><div class="bar"><div class="bar__fill" data-w="78"></div></div><span class="pct">78%</span></li>
+              <li><span>HTML / CSS</span><div class="bar"><div class="bar__fill" data-w="88"></div></div><span class="pct">88%</span></li>
+              <li><span>JavaScript / PHP</span><div class="bar"><div class="bar__fill" data-w="72"></div></div><span class="pct">72%</span></li>
+            </ul>
+          </div>
+
+          <div class="skill-card reveal">
+            <div class="skill-card__hd">
+              <div class="skill-card__ico"><i data-lucide="briefcase-business"></i></div>
+              <h3>Business</h3>
+            </div>
+
+            <ul class="skill-bars">
+              <li><span>Business Analysis</span><div class="bar"><div class="bar__fill" data-w="90"></div></div><span class="pct">90%</span></li>
+              <li><span>Problem Solving</span><div class="bar"><div class="bar__fill" data-w="90"></div></div><span class="pct">90%</span></li>
+              <li><span>Communication</span><div class="bar"><div class="bar__fill" data-w="88"></div></div><span class="pct">88%</span></li>
+              <li><span>Teamwork</span><div class="bar"><div class="bar__fill" data-w="92"></div></div><span class="pct">92%</span></li>
+            </ul>
+          </div>
+
+          <div class="skill-card reveal skill-card--tools">
+            <div class="skill-card__hd">
+              <div class="skill-card__ico"><i data-lucide="wrench"></i></div>
+              <h3>Tools</h3>
+            </div>
+
+            <div class="tools-grid">
+              <div class="tool-item"><i data-lucide="file-spreadsheet"></i><span>Excel</span></div>
+              <div class="tool-item"><i data-lucide="bar-chart-2"></i><span>Power BI</span></div>
+              <div class="tool-item"><i data-lucide="pie-chart"></i><span>Tableau</span></div>
+              <div class="tool-item"><i data-lucide="database"></i><span>MySQL</span></div>
+              <div class="tool-item"><i data-lucide="github"></i><span>GitHub</span></div>
+              <div class="tool-item"><i data-lucide="code"></i><span>VS Code</span></div>
+              <div class="tool-item"><i data-lucide="folder-kanban"></i><span>ClickUp</span></div>
+              <div class="tool-item"><i data-lucide="file-text"></i><span>MS Office</span></div>
+            </div>
+          </div>
+
+          <div class="skill-card reveal skill-card--tools">
+            <div class="skill-card__hd">
+              <div class="skill-card__ico"><i data-lucide="users"></i></div>
+              <h3>Soft Skills</h3>
+            </div>
+
+            <div class="tools-grid">
+              <div class="tool-item"><i data-lucide="message-circle"></i><span>Communication</span></div>
+              <div class="tool-item"><i data-lucide="lightbulb"></i><span>Problem Solving</span></div>
+              <div class="tool-item"><i data-lucide="users-round"></i><span>Teamwork</span></div>
+              <div class="tool-item"><i data-lucide="clock-3"></i><span>Time Management</span></div>
+              <div class="tool-item"><i data-lucide="presentation"></i><span>Presentation</span></div>
+              <div class="tool-item"><i data-lucide="search"></i><span>Analytical Thinking</span></div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== PROJECTS ==================== -->
+    <section class="section projects" id="projects">
+      <div class="container">
+
+        <div class="eyebrow">
+          <span class="eyebrow__line"></span>
+          <span class="eyebrow__num">04</span>
+          <span class="eyebrow__txt">Projects</span>
+        </div>
+
+        <div class="projects__hd">
+          <h2 class="sec-h2">Selected <span class="c-primary">Work</span></h2>
+
+          <div class="filter-tabs" id="filterTabs">
+            <button class="ftab active" data-filter="all">All</button>
+            <button class="ftab" data-filter="system">Systems</button>
+            <button class="ftab" data-filter="web">Web</button>
+            <button class="ftab" data-filter="ba">Business Analysis</button>
+          </div>
+        </div>
+
+        <div class="projects__grid" id="projectsGrid">
+
+          <!-- Project 1 -->
+          <article class="proj-card reveal" data-tags="system">
+            <div class="proj-card__img-wrap">
+              <div class="proj-img proj-img--system">
+                <div class="project-placeholder">
+                  <i data-lucide="building-2"></i>
+                  <span>HOSTEL MANAGEMENT</span>
+                </div>
+              </div>
+
+              <div class="proj-overlay">
+                <span class="overlay-link">
+                  <i data-lucide="database"></i> Python · MySQL
+                </span>
+              </div>
+
+              <span class="proj-num">01</span>
+            </div>
+
+            <div class="forensic-badge">
+              <div class="forensic-badge__row">
+                <span class="fb-key">TYPE</span>
+                <span class="fb-val">SYSTEM</span>
+              </div>
+              <div class="forensic-badge__row">
+                <span class="fb-key">ROLE</span>
+                <span class="fb-val fb-val--active">SYSTEM DEVELOPER</span>
+              </div>
+            </div>
+
+            <div class="proj-body">
+              <div class="proj-cats">
+                <span class="pcat pcat--mobile">Desktop</span>
+                <span class="pcat pcat--ai">Python</span>
+                <span class="pcat pcat--transport">MySQL</span>
+              </div>
+
+              <h3 class="proj-title">Hostel Management System</h3>
+
+              <p class="proj-desc">
+                Desktop management system designed to simplify student hostel administration,
+                including room allocations, student records and payment tracking.
+              </p>
+
+              <div class="forensic-report">
+                <div class="fr-line">
+                  <span class="fr-key">STACK</span>
+                  <span class="fr-sep">:</span>
+                  <span class="fr-val">Python · MySQL</span>
+                </div>
+                <div class="fr-line">
+                  <span class="fr-key">GUI</span>
+                  <span class="fr-sep">:</span>
+                  <span class="fr-val">Tkinter</span>
+                </div>
+                <div class="fr-line">
+                  <span class="fr-key">ROLE</span>
+                  <span class="fr-sep">:</span>
+                  <span class="fr-val">System Developer</span>
+                </div>
+              </div>
+
+              <span class="proj-link">
+                System Development <i data-lucide="arrow-right"></i>
+              </span>
+            </div>
+          </article>
+
+          <!-- Project 2 -->
+          <article class="proj-card proj-card--featured reveal" data-tags="web">
+            <div class="proj-card__img-wrap">
+              <div class="proj-img proj-img--debit">
+                <div class="project-placeholder">
+                  <i data-lucide="credit-card"></i>
+                  <span>DEBIT CARD RENEWAL</span>
+                </div>
+              </div>
+
+              <div class="proj-overlay">
+                <a
+                  href="https://github.com/Department-of-IT-FMSC-USJ/group-project-group-8"
+                  target="_blank"
+                  rel="noopener"
+                  class="overlay-link"
+                >
+                  <i data-lucide="github"></i> View on GitHub
+                </a>
+              </div>
+
+              <div class="featured-pill">✦ Featured</div>
+              <span class="proj-num">02</span>
+            </div>
+
+            <div class="forensic-badge">
+              <div class="forensic-badge__row">
+                <span class="fb-key">TYPE</span>
+                <span class="fb-val">FULL STACK</span>
+              </div>
+              <div class="forensic-badge__row">
+                <span class="fb-key">ROLE</span>
+                <span class="fb-val fb-val--active">DATABASE DEVELOPER</span>
+              </div>
+            </div>
+
+            <div class="proj-body">
+              <div class="proj-cats">
+                <span class="pcat pcat--web">Web</span>
+                <span class="pcat pcat--ai">PHP</span>
+                <span class="pcat pcat--agri">MySQL</span>
+              </div>
+
+              <h3 class="proj-title">Debit Card Renewal System</h3>
+
+              <p class="proj-desc">
+                Team-developed web application for efficient debit card tracking and renewals.
+                Responsible for designing and implementing the MySQL database structure and data management.
+              </p>
+
+              <div class="forensic-report">
+                <div class="fr-line">
+                  <span class="fr-key">STACK</span>
+                  <span class="fr-sep">:</span>
+                  <span class="fr-val">PHP · MySQL · HTML/CSS</span>
+                </div>
+                <div class="fr-line">
+                  <span class="fr-key">FRONTEND</span>
+                  <span class="fr-sep">:</span>
+                  <span class="fr-val">JavaScript · Tailwind CSS</span>
+                </div>
+                <div class="fr-line">
+                  <span class="fr-key">ROLE</span>
+                  <span class="fr-sep">:</span>
+                  <span class="fr-val">Database Developer</span>
+                </div>
+              </div>
+
+              <a
+                href="https://github.com/Department-of-IT-FMSC-USJ/group-project-group-8"
+                class="proj-link"
+                target="_blank"
+                rel="noopener"
+              >
+                View Project <i data-lucide="arrow-right"></i>
+              </a>
+            </div>
+          </article>
+
+          <!-- Project 3 -->
+          <article class="proj-card reveal" data-tags="ba">
+            <div class="proj-card__img-wrap">
+              <div class="proj-img proj-img--teago">
+                <div class="project-placeholder">
+                  <i data-lucide="leaf"></i>
+                  <span>TEAGO</span>
+                </div>
+              </div>
+
+              <div class="proj-overlay">
+                <span class="overlay-link">
+                  <i data-lucide="clipboard-list"></i> SRS · UML
+                </span>
+              </div>
+
+              <span class="proj-num">03</span>
+            </div>
+
+            <div class="forensic-badge">
+              <div class="forensic-badge__row">
+                <span class="fb-key">TYPE</span>
+                <span class="fb-val">BUSINESS ANALYSIS</span>
+              </div>
+              <div class="forensic-badge__row">
+                <span class="fb-key">ROLE</span>
+                <span class="fb-val fb-val--active">BUSINESS ANALYST</span>
+              </div>
+            </div>
+
+            <div class="proj-body">
+              <div class="proj-cats">
+                <span class="pcat pcat--web">BA</span>
+                <span class="pcat pcat--ai">UML</span>
+                <span class="pcat pcat--transport">Requirements</span>
+              </div>
+
+              <h3 class="proj-title">TeaGo — Tea Estate &amp; Factory Management System</h3>
+
+              <p class="proj-desc">
+                Team project focused on simplifying tea factory operations and supplier management
+                through structured requirements and coordinated development.
+              </p>
+
+              <div class="forensic-report">
+                <div class="fr-line">
+                  <span class="fr-key">TOOLS</span>
+                  <span class="fr-sep">:</span>
+                  <span class="fr-val">ClickUp · UML</span>
+                </div>
+                <div class="fr-line">
+                  <span class="fr-key">DELIVERABLES</span>
+                  <span class="fr-sep">:</span>
+                  <span class="fr-val">SRS · Requirements · User Stories</span>
+                </div>
+                <div class="fr-line">
+                  <span class="fr-key">ROLE</span>
+                  <span class="fr-sep">:</span>
+                  <span class="fr-val">Business Analyst</span>
+                </div>
+              </div>
+
+              <span class="proj-link">
+                Business Analysis <i data-lucide="arrow-right"></i>
+              </span>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== EXPERIENCE ==================== -->
+    <section class="section experience" id="experience">
+      <div class="container">
+
+        <div class="eyebrow">
+          <span class="eyebrow__line"></span>
+          <span class="eyebrow__num">05</span>
+          <span class="eyebrow__txt">Experience</span>
+        </div>
+
+        <h2 class="sec-h2">Professional <span class="c-primary">Journey</span></h2>
+
+        <div class="experience-grid">
+
+          <article class="experience-card reveal">
+            <div class="experience-card__icon">
+              <i data-lucide="clipboard-check"></i>
+            </div>
+            <div class="experience-card__content">
+              <span class="experience-date">JUN 2023 — JAN 2024</span>
+              <h3>Audit Trainee</h3>
+              <h4>Wijeyeratne &amp; Company</h4>
+              <p>
+                Assisted in reviewing financial statements, verifying records and preparing
+                audit documentation under senior supervision. Developed practical experience
+                in financial analysis, data verification, internal controls, Excel and professional communication.
+              </p>
+              <div class="experience-tags">
+                <span>Financial Analysis</span>
+                <span>Internal Controls</span>
+                <span>Excel</span>
+                <span>Audit Documentation</span>
+              </div>
+            </div>
+          </article>&nbsp;
+
+          <article class="experience-card reveal">
+            <div class="experience-card__icon">
+              <i data-lucide="graduation-cap"></i>
+            </div>
+            <div class="experience-card__content">
+              <span class="experience-date">2025 — PRESENT</span>
+              <h3>Private Tutor</h3>
+              <h4>G.C.E. A/L Accounting</h4>
+              <p>
+                Conduct individual tutoring and exam preparation in Sinhala and English,
+                strengthening analytical thinking, communication and student performance.
+              </p>
+              <div class="experience-tags">
+                <span>Accounting</span>
+                <span>Teaching</span>
+                <span>Communication</span>
+                <span>Mentoring</span>
+              </div>
+            </div>
+          </article>&nbsp;
+
+          <article class="experience-card reveal">
+            <div class="experience-card__icon">
+              <i data-lucide="users"></i>
+            </div>
+            <div class="experience-card__content">
+              <span class="experience-date">2024 — PRESENT</span>
+              <h3>S@IT — Students Association of Information Technology</h3>
+              <h4>University of Sri Jayewardenepura</h4>
+              <p>
+                Actively participated in organizing university events, workshops and activities,
+                contributing to teamwork, coordination and student engagement.
+              </p>
+              <div class="experience-tags">
+                <span>Event Coordination</span>
+                <span>Teamwork</span>
+                <span>Leadership</span>
+                <span>Student Engagement</span>
+              </div>
+            </div>
+          </article>&nbsp;
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== CERTIFICATIONS ==================== -->
+    <section class="section certs" id="certifications">
+      <div class="container">
+
+        <div class="eyebrow">
+          <span class="eyebrow__line"></span>
+          <span class="eyebrow__num">06</span>
+          <span class="eyebrow__txt">Certifications</span>
+        </div>
+
+        <h2 class="sec-h2">Credentials <span class="c-primary">&amp; Learning</span></h2>
+
+        <div class="certs__grid">
+
+          <div class="cert-card cert-card--done reveal">
+            <div class="cert-top">
+              <div class="cert-ico cert-ico--done"><i data-lucide="wifi"></i></div>
+              <span class="cert-badge cert-badge--done">Completed</span>
+            </div>
+            <h3 class="cert-title">Introduction to Internet of Things</h3>
+            <p class="cert-org">Cisco Networking Academy</p>
+            <p class="cert-desc">
+              Fundamentals of the Internet of Things, connectivity, data collection and smart device integration.
+            </p>
+            <div class="cert-log">
+              <span class="cl-row"><span class="cl-key">ISSUER</span><span class="cl-val">Cisco Networking Academy</span></span>
+              <span class="cl-row"><span class="cl-key">DATE</span><span class="cl-val">FEB 2026</span></span>
+            </div>
+            <a href="https://www.netacad.com/profile?tab=badges" target="_blank" rel="noopener" class="cert-link">
+              View Credential <i data-lucide="arrow-up-right"></i>
+            </a>
+          </div>
+
+          <div class="cert-card cert-card--done reveal">
+            <div class="cert-top">
+              <div class="cert-ico cert-ico--done"><i data-lucide="shield-check"></i></div>
+              <span class="cert-badge cert-badge--done">Completed</span>
+            </div>
+            <h3 class="cert-title">Cybersecurity Fundamentals</h3>
+            <p class="cert-org">APNIC Academy</p>
+            <p class="cert-desc">
+              Foundational cybersecurity concepts covering threats, risk and security best practices.
+            </p>
+            <div class="cert-log">
+              <span class="cl-row"><span class="cl-key">ISSUER</span><span class="cl-val">APNIC Academy</span></span>
+              <span class="cl-row"><span class="cl-key">DATE</span><span class="cl-val">JAN 2026</span></span>
+            </div>
+            <a href="https://academy.apnic.net/" target="_blank" rel="noopener" class="cert-link">
+              View Credential <i data-lucide="arrow-up-right"></i>
+            </a>
+          </div>
+
+          <div class="cert-card cert-card--done reveal">
+            <div class="cert-top">
+              <div class="cert-ico cert-ico--done"><i data-lucide="chart-no-axes-combined"></i></div>
+              <span class="cert-badge cert-badge--done">Completed</span>
+            </div>
+            <h3 class="cert-title">Business Analysis &amp; Process Management</h3>
+            <p class="cert-org">Coursera</p>
+            <p class="cert-desc">
+              Business analysis concepts and process management approaches for understanding and improving business operations.
+            </p>
+            <div class="cert-log">
+              <span class="cl-row"><span class="cl-key">ISSUER</span><span class="cl-val">Coursera</span></span>
+              <span class="cl-row"><span class="cl-key">DATE</span><span class="cl-val">JUL 2026</span></span>
+            </div>
+          </div>
+
+          <div class="cert-card cert-card--done reveal">
+            <div class="cert-top">
+              <div class="cert-ico cert-ico--done"><i data-lucide="monitor"></i></div>
+              <span class="cert-badge cert-badge--done">Completed</span>
+            </div>
+            <h3 class="cert-title">Computer Applications Assistant — NVQ Level 3</h3>
+            <p class="cert-org">MDP Computer Training Institute, Kandana</p>
+            <p class="cert-desc">
+              Professional foundation in computer applications and practical digital skills.
+            </p>
+            <div class="cert-log">
+              <span class="cl-row"><span class="cl-key">LEVEL</span><span class="cl-val">NVQ LEVEL 3</span></span>
+              <span class="cl-row"><span class="cl-key">DATE</span><span class="cl-val">JUL 2020 — MAR 2021</span></span>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== ACTIVITIES ==================== -->
+    <section class="section activities" id="activities">
+      <div class="container">
+
+        <div class="eyebrow">
+          <span class="eyebrow__line"></span>
+          <span class="eyebrow__num">07</span>
+          <span class="eyebrow__txt">Beyond Academics</span>
+        </div>
+
+        <h2 class="sec-h2">Leadership, Teaching &amp; <span class="c-primary">Community</span></h2>
+
+        <div class="activity-grid">
+
+          <article class="activity-card reveal">
+            <div class="activity-card__icon"><i data-lucide="heart-handshake"></i></div>
+            <span>CSR</span>
+            <h3>Sinasara’25</h3>
+            <p>
+              Organizing Committee Member — contributed to a CSR project supporting facilities
+              and learning experiences at a rural school.
+            </p>
+          </article>&nbsp;
+
+          <article class="activity-card reveal">
+            <div class="activity-card__icon"><i data-lucide="calendar-check"></i></div>
+            <span>EVENTS</span>
+            <h3>Sparsha’25</h3>
+            <p>
+              Logistics &amp; Organizing Committee Member — supported event planning and execution.
+            </p>
+          </article>&nbsp;
+
+          <article class="activity-card reveal">
+            <div class="activity-card__icon"><i data-lucide="trophy"></i></div>
+            <span>HACKATHON</span>
+            <h3>DHack 2025</h3>
+            <p>
+              Finance Member and later PR &amp; Delegates Crew Member, supporting sponsorship,
+              event finance, delegate coordination and attendee engagement.
+            </p>
+          </article>&nbsp;
+
+          <article class="activity-card reveal">
+            <div class="activity-card__icon"><i data-lucide="presentation"></i></div>
+            <span>TEACHING</span>
+            <h3>Accounts &amp; Business Studies</h3>
+            <p>
+              Led individual and group classes for Grade 10 &amp; 11 students and prepared learning materials.
+            </p>
+          </article>&nbsp;
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== CONTACT ==================== -->
+    <section class="section contact" id="contact">
+      <div class="container">
+
+        <div class="eyebrow">
+          <span class="eyebrow__line"></span>
+          <span class="eyebrow__num">08</span>
+          <span class="eyebrow__txt">Contact</span>
+        </div>
+
+        <div class="contact__layout">
+
+          <div class="contact__left reveal">
+            <h2 class="sec-h2">Let's <span class="c-primary">Connect</span></h2>
+
+            <p class="contact__p">
+              I’m interested in opportunities where I can apply business analysis,
+              data and systems knowledge while continuing to learn.
+            </p>
+
+            <p class="contact__p">
+              If you have an internship opportunity, project collaboration or simply
+              want to connect, feel free to reach out.
+            </p>
+
+            <div class="contact-log">
+              <div class="clog-hd">
+                <i data-lucide="terminal" style="width:13px;height:13px;"></i>
+                availability.log
+              </div>
+
+              <div class="clog-body">
+                <div class="clog-line">
+                  <span class="clog-key">STATUS</span>
+                  <span class="clog-sep">:</span>
+                  <span class="clog-val clog-active">OPEN_TO_WORK</span>
+                </div>
+
+                <div class="clog-line">
+                  <span class="clog-key">TYPE</span>
+                  <span class="clog-sep">:</span>
+                  <span class="clog-val">Internship</span>
+                </div>
+
+                <div class="clog-line">
+                  <span class="clog-key">DOMAIN</span>
+                  <span class="clog-sep">:</span>
+                  <span class="clog-val">Business Analysis · Data · BI</span>
+                </div>
+
+                <div class="clog-line">
+                  <span class="clog-key">LOCATION</span>
+                  <span class="clog-sep">:</span>
+                  <span class="clog-val">Gampaha, Sri Lanka</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="contact__right">
+
+            <a href="mailto:hansimadinali@gmail.com" class="cc-card reveal">
+              <div class="cc-ico"><i data-lucide="mail"></i></div>
+              <div class="cc-txt">
+                <span class="cc-label">Email</span>
+                <span class="cc-val">hansimadinali@gmail.com</span>
+              </div>
+              <i data-lucide="arrow-up-right" class="cc-arrow"></i>
+            </a>
+
+            <a href="tel:+94774427050" class="cc-card reveal">
+              <div class="cc-ico"><i data-lucide="phone"></i></div>
+              <div class="cc-txt">
+                <span class="cc-label">Phone</span>
+                <span class="cc-val">077 4427050</span>
+              </div>
+              <i data-lucide="arrow-up-right" class="cc-arrow"></i>
+            </a>
+
+            <a href="https://www.linkedin.com/in/dinalifernando" target="_blank" rel="noopener" class="cc-card reveal">
+              <div class="cc-ico"><img src="assests/linkedin.png"></div>
+              <div class="cc-txt">
+                <span class="cc-label">LinkedIn</span>
+                <span class="cc-val">linkedin.com/in/dinalifernando</span>
+              </div>
+              <i data-lucide="arrow-up-right" class="cc-arrow"></i>
+            </a>
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ==================== FOOTER ==================== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__inner">
+        <span class="footer__logo">
+          <span class="logo-bracket">[</span>DF<span class="logo-bracket">]</span>
+        </span>
+
+        <span class="footer__copy">
+          © 2026 Dinali Fernando · Business Information Systems
+        </span>
+
+        <div class="footer__socials">
+          <a href="https://www.linkedin.com/in/dinalifernando" target="_blank" rel="noopener" aria-label="LinkedIn">
+            <i data-lucide="linkedin"></i>
+          </a>
+          <a href="mailto:hansimadinali@gmail.com" aria-label="Email">
+            <i data-lucide="mail"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+
+  <script>
+    // Initialize Lucide icons
+    if (window.lucide) {
+      lucide.createIcons();
+    }
+
+    // Terminal typing effect
+    const terminalText = document.getElementById("terminalText");
+
+    if (terminalText) {
+      const commands = [
+        "analyze --business-requirements",
+        "build --data-dashboard",
+        "query --mysql-database",
+        "visualize --insights",
+        "solve --business-problem"
+      ];
+
+      let commandIndex = 0;
+      let charIndex = 0;
+      let deleting = false;
+
+      function typeTerminal() {
+        const current = commands[commandIndex];
+
+        if (!deleting) {
+          terminalText.textContent = current.slice(0, charIndex + 1);
+          charIndex++;
+
+          if (charIndex === current.length) {
+            deleting = true;
+            setTimeout(typeTerminal, 1700);
+            return;
+          }
+
+          setTimeout(typeTerminal, 55);
+        } else {
+          terminalText.textContent = current.slice(0, charIndex - 1);
+          charIndex--;
+
+          if (charIndex === 0) {
+            deleting = false;
+            commandIndex = (commandIndex + 1) % commands.length;
+            setTimeout(typeTerminal, 350);
+            return;
+          }
+
+          setTimeout(typeTerminal, 30);
+        }
+      }
+
+      typeTerminal();
+    }
+
+    // Mobile navigation
+    const navToggle = document.getElementById("navToggle");
+    const navLinks = document.getElementById("navLinks");
+
+    if (navToggle && navLinks) {
+      navToggle.addEventListener("click", () => {
+        navLinks.classList.toggle("is-open");
+        navToggle.classList.toggle("is-open");
+      });
+
+      navLinks.querySelectorAll("a").forEach(link => {
+        link.addEventListener("click", () => {
+          navLinks.classList.remove("is-open");
+          navToggle.classList.remove("is-open");
+        });
+      });
+    }
+
+    // Scroll navigation state
+    const nav = document.getElementById("nav");
+
+    window.addEventListener("scroll", () => {
+      if (nav) {
+        nav.classList.toggle("scrolled", window.scrollY > 30);
+      }
+    }, { passive: true });
+
+    // Project filters
+    const filterTabs = document.querySelectorAll(".ftab");
+    const projectCards = document.querySelectorAll(".proj-card");
+
+    filterTabs.forEach(tab => {
+      tab.addEventListener("click", () => {
+        filterTabs.forEach(item => item.classList.remove("active"));
+        tab.classList.add("active");
+
+        const filter = tab.dataset.filter;
+
+        projectCards.forEach(card => {
+          const tags = card.dataset.tags || "";
+
+          if (filter === "all" || tags.includes(filter)) {
+            card.style.display = "";
+            requestAnimationFrame(() => {
+              card.style.opacity = "1";
+              card.style.transform = "translateY(0)";
+            });
+          } else {
+            card.style.opacity = "0";
+            card.style.transform = "translateY(12px)";
+            setTimeout(() => {
+              card.style.display = "none";
+            }, 180);
+          }
+        });
+      });
+    });
+
+    // Reveal animation
+    const revealElements = document.querySelectorAll(".reveal");
+
+    if ("IntersectionObserver" in window) {
+      const observer = new IntersectionObserver((entries, obs) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add("is-vis");
+            obs.unobserve(entry.target);
+          }
+        });
+      }, { threshold: 0.12 });
+
+      revealElements.forEach(el => observer.observe(el));
+    } else {
+      revealElements.forEach(el => el.classList.add("is-vis"));
+    }
+
+    // Skill bar animation
+    const skillBars = document.querySelectorAll(".bar__fill");
+
+    if ("IntersectionObserver" in window) {
+      const skillObserver = new IntersectionObserver((entries, obs) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            const width = entry.target.dataset.w || "0";
+            entry.target.style.width = width + "%";
+            obs.unobserve(entry.target);
+          }
+        });
+      }, { threshold: 0.3 });
+
+      skillBars.forEach(bar => skillObserver.observe(bar));
+    } else {
+      skillBars.forEach(bar => {
+        bar.style.width = (bar.dataset.w || "0") + "%";
+      });
+    }
+
+    // Custom cursor
+    const cursor = document.getElementById("cursor");
+    const cursorRing = document.getElementById("cursorRing");
+
+    if (cursor && cursorRing && window.matchMedia("(pointer: fine)").matches) {
+      let mouseX = 0;
+      let mouseY = 0;
+      let ringX = 0;
+      let ringY = 0;
+
+      window.addEventListener("mousemove", event => {
+        mouseX = event.clientX;
+        mouseY = event.clientY;
+
+        cursor.style.left = mouseX + "px";
+        cursor.style.top = mouseY + "px";
+      });
+
+      function animateCursor() {
+        ringX += (mouseX - ringX) * 0.14;
+        ringY += (mouseY - ringY) * 0.14;
+
+        cursorRing.style.left = ringX + "px";
+        cursorRing.style.top = ringY + "px";
+
+        requestAnimationFrame(animateCursor);
+      }
+
+      animateCursor();
+
+      document.querySelectorAll("a, button").forEach(element => {
+        element.addEventListener("mouseenter", () => {
+          cursorRing.style.width = "46px";
+          cursorRing.style.height = "46px";
+          cursorRing.style.borderColor = "rgba(34,211,238,.8)";
+        });
+
+        element.addEventListener("mouseleave", () => {
+          cursorRing.style.width = "32px";
+          cursorRing.style.height = "32px";
+          cursorRing.style.borderColor = "rgba(34,211,238,.4)";
+        });
+      });
+    }
+
+    // Hero particle background
+    const canvas = document.getElementById("heroCanvas");
+
+    if (canvas) {
+      const ctx = canvas.getContext("2d");
+      let particles = [];
+      let animationFrame;
+
+      function resizeCanvas() {
+        const ratio = window.devicePixelRatio || 1;
+        canvas.width = window.innerWidth * ratio;
+        canvas.height = window.innerHeight * ratio;
+        canvas.style.width = window.innerWidth + "px";
+        canvas.style.height = window.innerHeight + "px";
+        ctx.setTransform(ratio, 0, 0, ratio, 0, 0);
+      }
+
+      function createParticles() {
+        const count = Math.min(90, Math.floor(window.innerWidth / 16));
+
+        particles = Array.from({ length: count }, () => ({
+          x: Math.random() * window.innerWidth,
+          y: Math.random() * window.innerHeight,
+          r: Math.random() * 1.5 + 0.3,
+          vx: (Math.random() - 0.5) * 0.18,
+          vy: (Math.random() - 0.5) * 0.18,
+          alpha: Math.random() * 0.45 + 0.1
+        }));
+      }
+
+      function drawParticles() {
+        ctx.clearRect(0, 0, window.innerWidth, window.innerHeight);
+
+        particles.forEach(p => {
+          p.x += p.vx;
+          p.y += p.vy;
+
+          if (p.x < 0) p.x = window.innerWidth;
+          if (p.x > window.innerWidth) p.x = 0;
+          if (p.y < 0) p.y = window.innerHeight;
+          if (p.y > window.innerHeight) p.y = 0;
+
+          ctx.beginPath();
+          ctx.arc(p.x, p.y, p.r, 0, Math.PI * 2);
+          ctx.fillStyle = `rgba(34,211,238,${p.alpha})`;
+          ctx.fill();
+        });
+
+        animationFrame = requestAnimationFrame(drawParticles);
+      }
+
+      resizeCanvas();
+      createParticles();
+      drawParticles();
+
+      window.addEventListener("resize", () => {
+        resizeCanvas();
+        createParticles();
+      });
+    }
+  </script>
+
+</body>
+</html>
